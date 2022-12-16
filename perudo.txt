@@ -39,6 +39,7 @@
 
 # Classi :
 - giocatore 
-    -Rilancio - Dubito - Palifico - Dichiarazione esatta
-- Bicchiere ( 5 dadi )
+- dado
+- bicchiere
+- round
     
