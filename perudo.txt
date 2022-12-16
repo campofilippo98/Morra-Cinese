@@ -1,0 +1,44 @@
+# Min. 2 Giocatori / Max. n di dadi disponibili
+# Vince l'ultimo giocatore che ha + di 1 dado
+# Ogni giocatore ha a disposizione 5 dadi e un bicchiere
+# Stabilire chi inizia e proseguire in senso orario -?
+# Tutti i giocatori agitano il bicchiere e lo capovolgono
+    # Possono sbirciare il contenuto (senza mostrarlo agli altri)
+# Chi inizia -> Sceglie un valore del dado e quanti dadi contengono
+# quel valore
+    # Il giocatore successivo -> Ha due possiblità in base alla 
+    # dichiarazione precedente
+        # Rilanciare
+        # Dubitare
+# I 3 casi ( Dichiarazione esatta, rilancio, dubito )
+# Dichiarazione esatta
+    # Vengono scoperti tutti i dadi e si controlla l'ultima affermazione
+    # Se è vera tutti i giocatori tranne quello che ha formulato la dichiarazione
+    # esatto perdono un dado
+    # Se la dichiarazione è falsa , quest'ultimo perde un dado
+
+#Rilancio
+    # Puo dichiarare 
+        # - O uno stesso numero di dadi (precedenti) ma dal
+        # valore più alto
+        # - Un numero di dadi maggiore di qualsiasi valore
+# Dubito
+    # Se si dubita tutti scoprono i dati e si controlla l'affermazione precedente
+        # - Se è giusta chi ha dichiara perde un dado
+        # - Se è falsa il giocatore che ha dubitato perde un dado
+# Chi perde un dado è il primo a fare la scommessa !!
+
+# Palifico = Dichiarazione (solo prima volta) nel gioco con un solo dado , ci si dichiara "palifico"
+    # Non si può cambiare il valore su  cui il palifico ha scommesso
+
+# Calza = Chi manca almeno un dado tranne il giocatore che ha fatto la chiamata
+# e il giocatore di turno. Chi chiama la "calza" pensa che l'ultima
+# dichiarazione sia giusta. Il round termina e tutti i giocatori ,
+# partendo da chi ha "calzato" mostrano i dadi. Se la chiamata è
+# perfettamente vera , chi ha calzato riacquista un dado, altrimenti lo perde
+
+# Classi :
+- giocatore 
+    -Rilancio - Dubito - Palifico - Dichiarazione esatta
+- Bicchiere ( 5 dadi )
+    
